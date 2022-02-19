@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 @Configuration
 public class MyConfig {
 
-    @Bean(name = "some")
+    @Bean(name = "someService")
     public SomeServiceImpl someService(){return new SomeServiceImpl(); };
 
     @Bean

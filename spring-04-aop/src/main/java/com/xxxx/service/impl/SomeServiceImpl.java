@@ -7,4 +7,11 @@ public class SomeServiceImpl implements SomeService {
     public void doSome(String name, Integer age) {
         System.out.println("Print doSome");
     }
+
+    @Override
+    public String doOther() {
+        System.out.println("Pring doOther");
+        return "abcd";
+
+    }
 }

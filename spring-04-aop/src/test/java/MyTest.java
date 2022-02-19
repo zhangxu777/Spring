@@ -11,8 +11,13 @@ public class MyTest {
     @Test
     public void test1(){
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(MyConfig.class);
-        SomeService bean = (SomeService) context.getBean("some");
-        bean.doSome("zhangxu",11);
+        SomeService bean = (SomeService) context.getBean("someService");
+        //System.out.println(bean.getClass().getName());
+       // bean.doSome("zhangxu",11);
+
+        //bean.doOther();
+        String ret = bean.doOther();
+        System.out.println(ret);
 
 
     }
