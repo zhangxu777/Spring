@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:annotation-config/>
+
+    <context:component-scan base-package="com.xxxx.pojo"/>
+
+<!--    <bean id="cat" class="com.xxxx.pojo.Cat"/>-->
+<!--    <bean id="dog" class="com.xxxx.pojo.Dog"/>-->
+<!--    <bean id="user" class="com.xxxx.pojo.User">-->
+<!--        <property name="cat" ref="cat"/>-->
+<!--        <property name="dog" ref="dog"/>-->
+<!--        <property name="str" value="ZX"/>-->
+<!--    </bean>-->
+    <bean id="temp1" class="com.xxxx.pojo.Temp"/>
+
+
+
+
+</beans>
