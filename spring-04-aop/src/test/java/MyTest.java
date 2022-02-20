@@ -16,7 +16,10 @@ public class MyTest {
        // bean.doSome("zhangxu",11);
 
         //bean.doOther();
-        String ret = bean.doOther();
+//        String ret = bean.doOther();
+//        System.out.println(ret);
+        //bean.doAround("zhangxuAround");
+        String ret = bean.doAround("zx");
         System.out.println(ret);
 
 

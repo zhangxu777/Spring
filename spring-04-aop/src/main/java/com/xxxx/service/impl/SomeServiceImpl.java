@@ -12,6 +12,13 @@ public class SomeServiceImpl implements SomeService {
     public String doOther() {
         System.out.println("Pring doOther");
         return "abcd";
-
     }
+
+    @Override
+    public String doAround(String name) {
+        System.out.println("Print SomeService doAround");
+        return "SomeService return doAround";
+    }
+
+
 }
