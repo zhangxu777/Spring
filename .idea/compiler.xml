@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="chapter7" />
+        <module name="spring-04-aop" />
+        <module name="spring-05-mybatis" />
         <module name="spring-02-di" />
+        <module name="chapter7" />
         <module name="spring-01-aop" />
         <module name="spring-03-javaconfig" />
-        <module name="spring-04-aop" />
       </profile>
     </annotationProcessing>
   </component>
