@@ -14,6 +14,7 @@
         <module>spring-03-javaconfig</module>
         <module>spring-04-aop</module>
         <module>spring-05-mybatis</module>
+        <module>spring-06-trans</module>
     </modules>
 
     <properties>

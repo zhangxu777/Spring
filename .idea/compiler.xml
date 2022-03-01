@@ -12,6 +12,7 @@
         <module name="chapter7" />
         <module name="spring-01-aop" />
         <module name="spring-03-javaconfig" />
+        <module name="spring-06-trans" />
       </profile>
     </annotationProcessing>
   </component>

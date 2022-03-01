@@ -14,7 +14,7 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public List<Student> queryStudent(Student student) {
+    public List<Student> queryStudent() {
         List<Student> students =  studentDao.selectAllStudents();
         return students;
     }
@@ -22,6 +22,12 @@ public class StudentServiceImpl implements StudentService {
     @Override
     public int addStudent(Student student) {
         int row = studentDao.insertStudent(student);
+        return row;
+    }
+
+    @Override
+    public int removeStudent(Student student){
+        int row = studentDao.delStudent(student);
         return row;
     }
 }

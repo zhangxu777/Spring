@@ -13,7 +13,7 @@ public class Student {
         this.id = id;
     }
 
-    public String getName() {
+    public String getName(String name3) {
         return name;
     }
 

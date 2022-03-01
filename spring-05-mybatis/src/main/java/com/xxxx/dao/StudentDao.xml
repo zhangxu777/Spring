@@ -11,4 +11,12 @@
         select id, name, age from student2
     </select>
 
+    <delete id="delStudent">
+        delete from student2 where id = #{id};
+    </delete>
+
+    <update id="updateStudent">
+        update student2 set id =
+    </update>
+
 </mapper>
