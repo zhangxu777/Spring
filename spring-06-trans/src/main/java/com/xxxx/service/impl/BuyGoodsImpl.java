@@ -8,10 +8,12 @@ import com.xxxx.service.BuyGoods;
 
 public class BuyGoodsImpl implements BuyGoods {
 
-    private Goods goods;
-    private Sale sale;
+
+
     private GoodsDao goodsDao;
+
     private SaleDao saleDao;
+
 
     public void setGoodsDao(GoodsDao goodsDao) {
         this.goodsDao = goodsDao;
@@ -21,18 +23,17 @@ public class BuyGoodsImpl implements BuyGoods {
         this.saleDao = saleDao;
     }
 
-    public void setGoods(Goods goods) {
-        this.goods = goods;
-    }
 
-    public void setSale(Sale sale) {
-        this.sale = sale;
-    }
+
+
 
     @Override
     public void buy(Integer goodId, Integer amount) {
+        Sale sale = new Sale();
+
         sale.setGid(goodId);
         sale.setNum(amount);
+        String row;
         saleDao.insertSale(sale);
 
 
